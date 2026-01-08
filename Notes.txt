@@ -1,0 +1,72 @@
+Database 
+---------
+Data ---> Raw facts or information.
+>> It is an organized collection of data. It can be easily accessed, manages and updated(manipulation).
+
+RDBMS --> Relational DataBase Management System, SQLDB
+-------------------------------------------------
+>> Data are stored in form of Tables (Rows and Columns)
+>> SQL (Structured Query language)
+>> Ex: MySQL, SQLServer, PostgreSQL, Oracle........
+
+DBMS NoSqlDB
+--------
+>> Data are stored in form of collections and objects.
+>> No need of SQL
+>> Ex: MongoDB, MariaDB..........
+
+SQL 
+------
+Syntax 
+----------
+>> It is case-insensitive ---> (a=A)
+SELECT * FROM tbname; (preferrable)
+>> Every query should end with ;
+
+Database  --> Table ---> Data 
+(Schema)
+
+Datatypes 
+----------
+Numeric
+---------
+INT --> whole numbers 
+FLOAT ---> Decimal 
+BIGINT
+DOUBLE 
+
+STRING 
+----------
+CHAR(n) --> Fixed length char string. Ex: Char(5)---> "Hello", "Hi", "Hendry", "Hi Hi"
+VARCHAR(n) --> Variable length char string. Ex: VARCHAR(5) --> "Hello", "Hi", "Priyanka"
+TEXT --> paragraph
+
+BOOLEAN
+--------
+BOOLEAN --> 1/0
+
+DATE and TIME 
+--------------
+DATE ---> "yyyy-mm-dd". Ex: "2026-01-08"
+TIME ---> "HH:MM:SS"
+DATETIME --> BOTH
+
+Constraints  --> Set of rules 
+-------------------------------
+PRIMARY KEY ---> unique and not null. to identify each record uniquely. only one primary key column in a table.
+
+
+Queries 
+--------
+To Create Database ---> CREATE DATABASE dbname;
+To Select DB ---> USE dbname;
+To Create Table ---> CREATE TABLE tbname(
+     col1 datatype constraints,
+     col2 datatype constraints,
+     col3 datatype constraints,
+     .
+     .
+);
+
+CRUD
+--------
