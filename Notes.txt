@@ -55,6 +55,16 @@ Constraints  --> Set of rules
 -------------------------------
 PRIMARY KEY ---> unique and not null. to identify each record uniquely. only one primary key column in a table.
 
+Operators 
+------------
+=
+!=, <>
+<
+>
+<=
+>=
+
+
 
 Queries 
 --------
@@ -68,5 +78,23 @@ To Create Table ---> CREATE TABLE tbname(
      .
 );
 
+To Create rows in a table --> INSERT INTO tbname (col details(optional)) VALUES (),(),();
+To Retrive data from a table ---> SELECT (Col details--> *) FROM tbname;
+To Update existing data in a table ---> UPDATE tbname SET col=val;
+To DELETE record from a table --> DDELETE FROM tbname;
+
 CRUD
 --------
+Create ---> INSERT
+Read ---> SELECT
+Update --> UPDATE
+DELETE --> DELETE
+
+SQL_SAFE_UPDATES --> ON(default) --> You can update only one row at a time. WHERE clause is must. condition must depend on primary key.
+
+SET SQL_SAFE_UPDATES=0
+
+WHERE 
+------
+>> It is used to filter the rows.
+Ex: SELECT, UPDATE, DELETE.... WHERE cond;
