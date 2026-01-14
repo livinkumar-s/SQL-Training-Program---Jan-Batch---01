@@ -64,7 +64,41 @@ Operators
 <=
 >=
 
+Logical Operators 
+-----------------
+AND 
+OR 
+NOT
 
+BETWEEN Operator (Inclusive Range)
+------------------
+Ex: WHERE colname BETWEEN Num1 and Num2;
+
+IN operator 
+------------
+>> It replaces multiple OR operators.
+Ex: ... WHERE colName IN (val12, val2......);
+
+LIKE operator (Pattern Matching)
+---------------------------------
+Ex: ... WHERE colName LIKE pattern;
+
+Pattern:
+----------
+_ --> matches exactly single char.
+% --> matches 0 to infinite chars.
+
+
+Ex: 
+starts with S ---> "s%" --> "Surya", "SS raja", "s"
+ends with a---> "%a" --> "a" 
+
+SORT 
+-----
+
+
+LIMIT 
+------
 
 Queries 
 --------
