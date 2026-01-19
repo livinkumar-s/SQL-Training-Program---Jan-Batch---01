@@ -135,3 +135,32 @@ WHERE
 ------
 >> It is used to filter the rows.
 Ex: SELECT, UPDATE, DELETE.... WHERE cond;
+
+Functions 
+------------
+>> Predefined Operations. it takes an input from a single row.
+
+Numeric Functions 
+------------------
+round(dec num) ---> rounds off dec num to the closest int
+ceil(dec num) ---> rounds off dec num to the next int
+floor(dec num) ---> rounds off dec num.
+ABS(num)--> absolute number
+MOD(n1,n2) --> performs mod operation.
+power(n1,n2)
+
+String Functions 
+-------------------
+CONCAT(str1,str2,str3.....) ---> attaches all the strings.
+UPPER(str)
+LOWER(str)
+LENGTH(str)
+SUBSTRING(str, start, len)
+replace(str, old, new)
+
+DATE TIME functions 
+-------------------
+CURDATE()
+CURTIME()
+NOW()
+DATEDIFF(d1,d2)
