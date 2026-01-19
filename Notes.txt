@@ -93,12 +93,15 @@ Ex:
 starts with S ---> "s%" --> "Surya", "SS raja", "s"
 ends with a---> "%a" --> "a" 
 
-SORT 
+SORT( ORDER BY )
 -----
+Arragnging rows either in ASC or in Desc.
+Ex: Select.....where.... ORDER BY colName ASC/DESC;
 
-
-LIMIT 
+LIMIT/OFFSET
 ------
+It is used to limit the number of result from a query.
+Ex: select..... LIMIT num OFFSET num;
 
 Queries 
 --------
