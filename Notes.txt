@@ -53,7 +53,22 @@ DATETIME --> BOTH
 
 Constraints  --> Set of rules 
 -------------------------------
+>> Rule applied to a column or table to maintain data integrity.
+
 PRIMARY KEY ---> unique and not null. to identify each record uniquely. only one primary key column in a table.
+
+AUTO_INCREMENT ---> It increments numeric value.
+
+NOT NULL ---> It ensures no null values are in a col
+
+UNIQUE ---> It ensures there are no duplicates in a col.
+
+CHECK --> It is used to check a condition
+
+DEFAULT --> Adding default value to a column
+
+FOREIGN KEY---> Creates relationship between 2 tables. referential integrity.
+Ex: foreign key (name) references table(key);
 
 Operators 
 ------------
@@ -164,3 +179,4 @@ CURDATE()
 CURTIME()
 NOW()
 DATEDIFF(d1,d2)
+
