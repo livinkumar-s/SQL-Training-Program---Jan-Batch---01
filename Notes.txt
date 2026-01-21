@@ -180,3 +180,39 @@ CURTIME()
 NOW()
 DATEDIFF(d1,d2)
 
+Joins 
+---------
+data is normalized(split into multiple tables).
+
+Inner Join
+------------
+>> Returns only matching records from both tables.
+>> Non-matching rows are ignored.
+Ex: select (col details) from tab1 inner join tab2 on relationship;
+
+Left Outer Join 
+----------------
+>> Returns all records from left table.
+>> joins records from right.
+Ex: select (col details) from tab1 left join tab2 on relationship;
+
+
+Right Outer Join 
+-------------------
+>> Returns all records from right table.
+>> joins records from left.
+Ex: select (col details) from tab1 right join tab2 on relationship;
+
+Full Outer Join 
+----------------
+>> Returns all records from both tables.
+select (col details) from tab1 right join tab2 on relationship 
+union
+select (col details) from tab1 right join tab2 on relationship;
+
+Cross Join 
+-----------
+>> Every records from left table will be matched with every records from right table.
+
+rows at result --> rows from left * rows from right
+Ex: select * from tab1 cross join tab2;
