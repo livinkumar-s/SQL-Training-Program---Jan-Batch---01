@@ -216,3 +216,23 @@ Cross Join
 
 rows at result --> rows from left * rows from right
 Ex: select * from tab1 cross join tab2;
+
+
+Aggregation and Grouping
+------------------------
+Aggregation ---> many rows --> one summarized
+
+COUNT --> count number of rows.
+SUM --> sum of a numeric col.
+MAX --> maximum value of col
+MIN --> smallest value of col
+AVG --> average of a numeric column
+
+GROUPING 
+---------
+GROUP BY 
+ it divides rows into groups and applies functions per group.
+ Ex: select aggregate fnc .... group by col;
+
+WHERE ----> filter rows 
+HAVING ---> filter groups
