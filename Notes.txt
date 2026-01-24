@@ -236,3 +236,36 @@ GROUP BY
 
 WHERE ----> filter rows 
 HAVING ---> filter groups
+
+Subqueries 
+-------------
+>> It is a query inside another query.
+Ex: main query (inner query)
+
+Single row Subqueries
+----------------------
+>> It will return only one row.
+Ex: select * from students where 
+mark>(select avg(mark) from students);
+
+Multi rows Subqueries 
+---------------------
+>> It will return Multiple rows.
+Ex: select * from students 
+where 
+mark > ALL (select mark from students where dept="ECE")
+
+ALL 
+---
+every value from inner query should meet the condition
+
+ANY 
+-----
+any one value from inner query should meet the condition
+
+Correlated Subqueries 
+--------------------
+>> A Correlated Subquery depends on the outer query.
+Ex: select * from students s1
+ where mark > 
+ (select avg(mark) from students s2 where dept=s1.dept);
