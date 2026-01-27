@@ -151,6 +151,20 @@ WHERE
 >> It is used to filter the rows.
 Ex: SELECT, UPDATE, DELETE.... WHERE cond;
 
+ALTER 
+-----------
+To change the structure of an existing column.
+
+To Add a new column ---> ALTER TABLE tbname ADD colDetails1, colDetails2...;
+To Remove a column ---> ALTER TABLE tbname DROP COLUMN colName;
+To Modify Column (change DT) --> ALTER TABLE tbname MODIFY colName modification;
+To rename column ---> ALTER TABLE tbname CHANGE old new dt;
+
+To rename table ---> ALTER TABLE tbname RENAME TO newName;
+To drop table ---> DROP TABLE tbname;
+To drop database --> DROP DATABASE dbname;
+
+
 Functions 
 ------------
 >> Predefined Operations. it takes an input from a single row.
@@ -269,3 +283,18 @@ Correlated Subqueries
 Ex: select * from students s1
  where mark > 
  (select avg(mark) from students s2 where dept=s1.dept);
+
+
+Views 
+---------
+>> A view is a virtual table created from a SELECT query.
+>> Does not store physical data.
+
+To create view --> CREATE VIEW viewName AS SELECT query;
+
+Transactions
+--------------
+Transaction is a group of SQL statements that must be executed as one single unit
+
+To initiate Transaction ---> START TRANSACTION 
+To save changes ----> COMMIT
